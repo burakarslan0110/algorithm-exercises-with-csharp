@@ -1,6 +1,6 @@
 # Algorithm Exercises With C#
 
-C# dilini öğrenirken karşılaştığım algoritma sorularını çözümleriyle birlikte bu depoda bir araya getirdim.
+C# dilini öğrenirken karşılaştığım algoritma sorularını çözümleriyle birlikte bu repoda bir araya getirdim.
 
 - Kullanıcıdan alınan iki sayının toplamını ekrana yazdıran program
     
