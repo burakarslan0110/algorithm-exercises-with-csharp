@@ -297,7 +297,7 @@ C# dilini öğrenirken karşılaştığım algoritma sorularını çözümleriyl
      }
     ```
 
-- 3x4'lük A ve B matrisinin transpozunu C matrisine koyan ve ekrana yazdıran program.
+- 3x4'lük A ve B matrisinin toplamını C matrisine koyan ve ekrana yazdıran program.
 
     ```csharp
      int[,] A = new int[3, 4] {
