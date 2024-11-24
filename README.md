@@ -275,3 +275,97 @@ C# dilini öğrenirken karşılaştığım algoritma sorularını çözümleriyl
     	Console.Write(" " + i);
     }
     ```
+
+- 3x3 A matrisinin transpozunu B matrisine koyan program.
+
+    ```csharp
+     int[,] matrisA = new int[,]
+     {
+     {1, 2, 3},
+     {4, 5, 6},
+     {7, 8, 9}
+     };
+
+     int[,] matrisB = new int[3, 3];
+
+     for (int i = 0; i < 3; i++)
+     {
+         for (int j = 0; j < 3; j++)
+         {    
+         matrisB[i, j] = matrisA[j, i];
+         }
+     }
+    ```
+
+- 3x4'lük A ve B matrisinin transpozunu C matrisine koyan ve ekrana yazdıran program.
+
+    ```csharp
+     int[,] A = new int[3, 4] {
+     {1, 2, 3, 4},
+     {5, 6, 7, 8},
+     {9, 10, 11, 12}
+     };
+
+     int[,] B = new int[3, 4] {
+     {1, 1, 1, 1},
+     {2, 2, 2, 2},
+     {3, 3, 3, 3}
+     };
+
+     int[,] C = new int[3, 4];
+
+     for (int i = 0; i < 3; i++)
+     {
+         for (int j = 0; j < 4; j++)
+         {
+             C[i, j] = A[i, j] + B[i, j];
+             Console.Write(C[i, j] + " ");
+         }
+         Console.WriteLine();
+     }
+    ```
+
+- Her bir elemanı 1 ile 10 arasındaki rastgele sayılardan oluşan 5x5'lik bir matrisi oluşturup ekrana yazdıran program.
+
+    ```csharp
+     Random rnd = new Random();
+     int[,] matris = new int[5, 5];
+    
+     for (int i = 0; i < 5; i++)
+     {
+         for (int j = 0; j < 5; j++)
+         {
+             matris[i, j] = rnd.Next(1, 11);
+             Console.Write(matris[i, j] + " ");
+         }
+         Console.WriteLine();
+     }
+    ```
+
+- Aşağıdaki verilen matrisi oluşturan C# kodunu yazınız.
+
+![image](https://github.com/user-attachments/assets/1454a402-8e61-4301-b75c-2aa9d5aa73ce)
+
+    
+```csharp
+ int[,] matris4 = new int[4, 4];
+
+ for (int i = 0; i < 4; i++)
+ {
+     for (int j = 0; j < 4; j++)
+     {
+         if (j + i < 3)
+         {
+             matris4[i, j] = 0;
+         }
+         else if (j + i == 3)
+         {
+             matris4[i, j] = 1;
+         }
+         else
+         {
+             matris4[i, j] = 2;
+         }
+     }
+ }
+```
